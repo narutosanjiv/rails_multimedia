@@ -1,0 +1,8 @@
+1) http://www.imdb.com/list/7cOLrm72EME/ Parse Ten Beautiful Asian actress and their related films
+
+2) Parse http://www.internationallovescout.com/blog/20-most-beautiful-thai-women
+
+3) Parse Video and anime 
+
+Development Idea:
+  1) Implement Infinite Scrolling  With Zurb Foundation css
