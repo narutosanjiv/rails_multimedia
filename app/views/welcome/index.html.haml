@@ -1,1 +1,25 @@
+= content_for :title do
+  'Entertainment' 
 = render 'shared/top_nav'
+.row
+  .large-12.columns
+    .panel
+      %h1
+        Beautiful Actress in The World
+- @contents.each do|content|
+  .row
+    .large-6.columns
+      %h2
+        = content[:title]
+      %img{src: content[:img]}/
+    .large-6.columns
+      .panel
+        %h3.hide-for-small
+          #{content[:title].split('-').last()} Info
+        %h5.subheader
+          = content[:info] 
+              
+          
+      
+           
+    

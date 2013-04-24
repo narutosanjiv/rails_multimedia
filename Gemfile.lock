@@ -104,6 +104,8 @@ GEM
       rack (>= 1.0)
     rake (10.0.4)
     ref (1.0.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.8)
     sass-rails (4.0.0.rc1)
       railties (>= 4.0.0.beta, < 5.0)
@@ -157,7 +159,10 @@ DEPENDENCIES
   jbuilder (~> 1.0.1)
   jquery-rails
   jquery-turbolinks
+  mechanize
+  nokogiri
   rails!
+  rest-client
   sass-rails (~> 4.0.0.beta1)
   therubyracer
   turbolinks

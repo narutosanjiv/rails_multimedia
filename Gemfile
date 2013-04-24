@@ -16,6 +16,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'zurb-foundation', '~> 4.0.0'
 end
+gem 'nokogiri'
+gem 'rest-client'
+gem 'mechanize'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'

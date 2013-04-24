@@ -1,0 +1,6 @@
+Study Need to be done for Implementing Parsing:
+  Ruby 
+  Rails
+  Javascript 
+  Zurb Css
+  Various Jquery Plugin 
