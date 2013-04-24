@@ -6,3 +6,5 @@
 
 Development Idea:
   1) Implement Infinite Scrolling  With Zurb Foundation css
+  
+  2) http://www.imdb.com/name/nm0000001/  Parsing can be done for all since nm00000 is incremental starting from 000000
