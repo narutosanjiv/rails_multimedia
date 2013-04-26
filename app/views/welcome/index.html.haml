@@ -1,5 +1,7 @@
+= yield :index_page_template
 = content_for :title do
-  'Entertainment' 
+  Entertainment 
+
 = render 'shared/top_nav'
 .row
   .large-12.columns
@@ -8,9 +10,9 @@
         Beautiful Actress in The World
 - @contents.each do|content|
   .row
+    %h2
+      = content[:title]
     .large-6.columns
-      %h2
-        = content[:title]
       %img{src: content[:img]}/
     .large-6.columns
       .panel

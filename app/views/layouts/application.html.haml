@@ -17,6 +17,8 @@
     = javascript_include_tag "vendor/custom.modernizr"
     = csrf_meta_tags
   %body
+    = render "shared/handler_bar_template"
     = yield
     = javascript_include_tag "application"
-
+    = javascript_include_tag "handlebars/handlebars"
+    = yield :js

@@ -1,0 +1,32 @@
+:plain
+  <script type = "text/x-handlebars-template" id = "index_page_template" >
+     {{#each contents}}
+      <div class= 'row'>
+        <h2>
+          {{title}} 
+        </h2>
+        <div class="large-6 columns">
+          <img src={{img}} />
+        </div>
+        <div class="large-6 columns">
+          <div class='panel'>
+            <h3 class='hide-for-small'>
+              {{readable_name title}}
+            </h3>
+            <h5 class="subheader">
+              {{info}} 
+            </h5>
+          </div>
+          
+        </div> 
+      </div>
+    {{/each}}
+  </script>
+= content_for :js do
+  :javascript
+    $(document).ready(function(){
+      Handlebars.registerHelper('readable_name', function(name) {
+        a = name.split('-')
+        return a[a.length - 1] ;
+      }) 
+    })
