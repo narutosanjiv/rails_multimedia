@@ -8,19 +8,23 @@
     .panel
       %h1
         Beautiful Actress in The World
-- @contents.each do|content|
-  .row
-    %h2
-      = content[:title]
-    .large-6.columns
-      %img{src: content[:img]}/
-    .large-6.columns
-      .panel
-        %h3.hide-for-small
-          #{content[:title].split('-').last()} Info
-        %h5.subheader
-          = content[:info] 
-              
+= content_for :js do
+  :javascript 
+    $(document).ready(function(){
+      var request = $.ajax({
+                      url: "/",
+                      dataType: "json"
+                    });
+      request.done(function(data) {
+        console.log("sanjiv");
+        contents = data["contents"]
+        console.log(contents);
+        source = $('#index_page_template').html()
+        template = Handlebars.compile(source)
+        html_data = template({contents: contents})
+        $('nav.top-bar').next().after(html_data)    
+      });    
+    })              
           
       
            
