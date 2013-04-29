@@ -4,7 +4,7 @@ RailsMultimedia::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root to: 'welcome#index'
-
+  get '/videos' => "asset_videos#search_video", as: :search_videos
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

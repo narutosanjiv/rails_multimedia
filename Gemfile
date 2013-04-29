@@ -22,7 +22,7 @@ gem 'mechanize'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
-#gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'viddl-rb'

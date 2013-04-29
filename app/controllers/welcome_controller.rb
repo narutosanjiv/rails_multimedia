@@ -10,5 +10,12 @@ class WelcomeController < ApplicationController
       format.json { render json: {contents: @contents}.as_json() } 
     end 
   end
+  
+  def search_video
 
+  end
+
+  def video_listing 
+
+  end
 end
