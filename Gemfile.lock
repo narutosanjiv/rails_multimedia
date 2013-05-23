@@ -111,6 +111,10 @@ GEM
     origin (1.1.0)
     polyglot (0.3.3)
     progressbar (0.20.0)
+    puma (2.0.1)
+      rack (>= 1.1, < 2.0)
+    puma (2.0.1-java)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -174,6 +178,7 @@ DEPENDENCIES
   mechanize
   mongoid!
   nokogiri
+  puma
   rails!
   rest-client
   sass-rails (~> 4.0.0.beta1)
