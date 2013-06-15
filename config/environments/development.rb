@@ -17,6 +17,7 @@ RailsMultimedia::Application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   # Print deprecation notices to the Rails logger.
+  config.log_level = :debug
   config.active_support.deprecation = :log
 
 

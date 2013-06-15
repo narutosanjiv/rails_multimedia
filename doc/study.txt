@@ -3,4 +3,8 @@ Study Need to be done for Implementing Parsing:
   Rails
   Javascript 
   Zurb Css
-  Various Jquery Plugin 
+  Various Jquery Plugin
+
+Zurb Foundation 4 documentation can be found inside the foundation gem directory inside rvm incase you have installed gem using rvm 
+Just go to zurb-foundation 4 gem directory , inside you will find docs directory and go to and do bundle install and start bundle exec forman start
+Go to brower and access the http://localhost:4000/ , you will see full documentation 

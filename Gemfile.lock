@@ -64,11 +64,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    daemons (1.1.9)
     domain_name (0.5.11)
       unf (>= 0.0.5, < 1.0.0)
+    em-synchrony (1.0.3)
+      eventmachine (>= 1.0.0.beta.1)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faye-websocket (0.6.1)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.2.0)
     haml (4.0.2)
       tilt
     haml-rails (0.4)
@@ -77,6 +84,7 @@ GEM
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
     hike (1.2.2)
+    hiredis (0.4.5)
     i18n (0.6.4)
     jbuilder (1.0.2)
       activesupport (>= 3.0.0)
@@ -119,6 +127,7 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.0.4)
+    redis (3.0.4)
     ref (1.0.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -140,6 +149,10 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
@@ -162,6 +175,15 @@ GEM
       nokogiri
       progressbar
     webrobots (0.1.1)
+    websocket-driver (0.2.0)
+    websocket-rails (0.4.6)
+      em-synchrony
+      faye-websocket
+      hiredis
+      rack
+      rails
+      redis
+      thin
     zurb-foundation (4.0.9)
       sass (>= 3.2.0)
 
@@ -186,4 +208,5 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.0.3)
   viddl-rb
+  websocket-rails
   zurb-foundation (~> 4.0.0)

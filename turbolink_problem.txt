@@ -1,0 +1,35 @@
+1) Make all javascript load inside head tag
+2) Put all jquery-turbolinks after immediately  jquery.js  and before turbolinks js 
+3) Include all your custom js between jquery-turbolinks.js and turbolinks.js in application js
+4) Bind all event on document 
+   for example
+    you want to bind click event on button having class 'btn-submit' :
+      Bad Practice and may be case that your event will never get bind
+      $('btn-submit').bind('click', function(){
+        //code
+      })
+      
+      Problem with above approach is that Your event handler need to bind to element eahc time DOM is modified
+      such as , when turbolink does the page  load without full page refresh. $(document).ready will not get fired
+      in case turbolink page load
+
+      Good Practice
+      $(document).on('click', '.btn-submit', function(){
+
+      })
+
+5) Be careful while using coffescript, since coffeescript enclose all your code in anonymous function and may be case 
+   your code will get executed more than one times.
+
+6) Be careful while using clientside javascript frameworks just as backbone js , turbolink and backbone js are not compatible.
+
+7) I have found while using zurb-foundation 4 gem , select box not showing options when page loading through turbolinks.
+   I have to manually have to called foundation events on event "page:load"(turbolink custom event ).
+
+  document.addEventListener("page:load", function(){
+    Foundation.libs.dropdown.events();
+  });
+
+      
+
+        

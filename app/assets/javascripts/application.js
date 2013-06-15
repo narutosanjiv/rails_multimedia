@@ -11,10 +11,14 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require foundation
-//= require jquery.turbolinks
+//= require jwplayer/jwplayer.js
+//= require asset_videos
 //= require turbolinks
-//= require jwplayer/jwplayer.js
-//= require jwplayer/jwplayer.js
 $(document).foundation();
+document.addEventListener("page:load", function(){
+  Foundation.libs.dropdown.events(); 
+});
+
