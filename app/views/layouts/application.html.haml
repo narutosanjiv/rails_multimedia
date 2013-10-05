@@ -13,13 +13,16 @@
     / Set the viewport width to device width for mobile
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "Untitled"
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag  "application"
+    /%link{href: "http://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet", type: "text/css"}/
     = yield :css
-    = javascript_include_tag "vendor/custom.modernizr"
+    = csrf_meta_tags
     = javascript_include_tag "application"
     = javascript_include_tag "handlebars/handlebars"
     = yield :js
-    = csrf_meta_tags
-  %body
+
+  %body{class: "metrouicss"}
+    = render 'shared/top_nav'
     = yield
     = render "shared/handler_bar_template"
+    

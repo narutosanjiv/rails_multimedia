@@ -13,12 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require foundation
 //= require jwplayer/jwplayer.js
 //= require asset_videos
 //= require turbolinks
-$(document).foundation();
-document.addEventListener("page:load", function(){
-  Foundation.libs.dropdown.events(); 
-});
-
+//= require_tree ../../../vendor/assets/javascripts/metro_ui/ 

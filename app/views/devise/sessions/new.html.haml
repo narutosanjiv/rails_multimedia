@@ -1,0 +1,24 @@
+.page.secondary
+  .page-header
+    .page-header-content
+      %h1 Sign in
+      = link_to "", "/", class: "back-button page-back"
+  .page-region
+    .page-region-content
+      .grid
+        .row     
+          .span5.sign_in_sign_up 
+            = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+              .input-control.text    
+                = f.email_field :email, :autofocus => true, placeholder: 'Enter Email'
+                %button{class: "btn-clear", tabindex: "-1", type: "button"}
+              .input-control.password
+                = f.password_field :password, placeholder: "Enter password"
+                %button{class: "btn-reveal", tabindex: "-1", type: "button"}
+              - if devise_mapping.rememberable?
+                .input-control.checkbox
+                  = f.check_box :remember_me
+                  %span.helper
+                    Remember Me
+              %div= f.submit "Sign in"
+            = render "devise/shared/links"

@@ -1,58 +1,76 @@
 / Navigation
-%nav.top-bar
-  %ul.title-area
-    / Title Area
-    %li.name
-      %h1
+.page
+  .nav-bar
+    .nav-bar-inner.padding10
+      %span.pull-menu
+      %a
+        %span.element.brand  
+          Rails MultiMedia
+      .divider
+      %ul.menu
+        %li
+          = link_to "Home", "/" 
+        %li{data:{role: "dropdown"}}
+          = link_to "Entertainment", "#"
+          %ul.dropdown-menu
+            %li
+              = link_to "Video", '#'  
+           
+-#         
+  %nav.top-bar
+    %ul.title-area
+      / Title Area
+      %li.name
+        %h1
+          %a{:href => "#"}
+            Rails Multimedia
+      %li.toggle-topbar.menu-icon
         %a{:href => "#"}
-          Rails Multimedia
-    %li.toggle-topbar.menu-icon
-      %a{:href => "#"}
-        %span menu
-  %section.top-bar-section
-    %ul.left
-      %li.divider
-      %li
-        %a{href: "#"} Video
-    / Right Nav Section
-    %ul.right
-      %li.divider
-      %li.has-dropdown
-        %a{:href => "#"} Entertainment 
-        %ul.dropdown
-          %li
-            %label Fun
-          %li.has-dropdown
-            %a{:href => "#"} Image(Celeb) 
-            %ul.dropdown
-              %li
-                %a{:href => "#"} Indian Actress
-              %li
-                %a{:href => "#"} Chinese Actress
-              %li
-                %a{:href => "#"} Thailand Actress   
-              %li
-                %a{:href => "#"} Japanese Actress
-              %li
-                %a{:href => "#"} Hollywood Actress
-          %li
-            %a{:href => list_videos_path} Video
-          %li
-            %a{:href => "#"} Wallpaper
-          %li.divider
-          %li.has-dropdown
-            %a{:href => "#"} Imdb List
-            %ul.dropdown
-              %li
-                %a{:href => "#"} Top Movie List
-              %li
-                %a{:href => "#"} My Favorite Actress 
-          %li.divider
-          %li
-            %a{:href => "#"} See all →
-      %li.divider
-      %li.has-dropdown
-        %a{:href => "#"} Anime Craze
-        %ul.dropdown
-          %li
-            %a{href: "#"} Wallpaper
+          %span menu
+    %section.top-bar-section
+      %ul.left
+        %li.divider
+        %li
+          %a{href: "#"} Video
+      / Right Nav Section
+      %ul.right
+        %li.divider
+        %li.has-dropdown
+          %a{:href => "#"} Entertainment 
+          %ul.dropdown
+            %li
+              %label Fun
+            %li.has-dropdown
+              %a{:href => "#"} Image(Celeb) 
+              %ul.dropdown
+                %li
+                  %a{:href => "#"} Indian Actress
+                %li
+                  %a{:href => "#"} Chinese Actress
+                %li
+                  %a{:href => "#"} Thailand Actress   
+                %li
+                  %a{:href => "#"} Japanese Actress
+                %li
+                  %a{:href => "#"} Hollywood Actress
+            %li
+              %a{:href => list_videos_path} Video
+            %li
+              %a{:href => "#"} Wallpaper
+            %li.divider
+            %li.has-dropdown
+              %a{:href => "#"} Imdb List
+              %ul.dropdown
+                %li
+                  %a{:href => "#"} Top Movie List
+                %li
+                  %a{:href => "#"} My Favorite Actress 
+            %li.divider
+            %li
+              %a{:href => "#"} See all →
+        %li.divider
+        %li.has-dropdown
+          %a{:href => "#"} Anime Craze
+          %ul.dropdown
+            %li
+              %a{href: "#"} Wallpaper
