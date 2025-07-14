@@ -8,7 +8,7 @@ gem 'puma'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'coffee-rails', '~> 4.2.2.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
@@ -18,18 +18,18 @@ group :assets do
 end
 gem 'nokogiri'
 gem 'rest-client'
-gem 'mechanize'
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'jquery-turbolinks'
-gem 'websocket-rails'
+gem 'mechanize', '>= 2.7.0'
+gem 'haml-rails', '>= 1.0.0'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-turbolinks', '>= 2.0.0'
+gem 'websocket-rails', '>= 0.4.7'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-gem 'viddl-rb'
+gem 'viddl-rb', '>= 0.89'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
+gem 'jbuilder', '~> 1.2.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
