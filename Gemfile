@@ -16,9 +16,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'zurb-foundation', '~> 4.0.0'
 end
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.9'
 gem 'rest-client'
-gem 'mechanize'
+gem 'mechanize', '>= 2.7.0'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
@@ -26,7 +26,7 @@ gem 'websocket-rails'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-gem 'viddl-rb'
+gem 'viddl-rb', '>= 0.79'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
